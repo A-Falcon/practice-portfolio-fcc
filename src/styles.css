@@ -1,0 +1,167 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: grey;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: #eb5e28;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.7 rem;
+  padding: 2rem;
+  color: #ccc5b9;
+  transition: 500ms;
+}
+
+.nav-list a:hover {
+  color: #252422;
+}
+
+a {
+  text-decoration: none;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #252422;
+  padding: 10rem 2rem;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+
+#welcome-section p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #eb5e28;
+  margin: 0;
+}
+
+#projects {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #403d39;
+  width: 100%;
+}
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #eb5e28;
+  color: #ccc5b9;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  background: #252422;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  color: #ccc5b9;
+  transition: 500ms;
+}
+
+.project-title:hover {
+  color: #eb5e28;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
+  background-color: #ccc5b9;
+}
+
+.contact-header h2 {
+  margin: 0;
+  font-size: 6rem;
+  color: #eb5e28;
+}
+.contact-header p {
+  font-style: italic;
+  margin: 0;
+  color: #403d39;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+.contact-details {
+  font-size: 2.4rem;
+  color: #252422;
+  transition: 500ms;
+}
+
+.contact-details:hover {
+  color: #eb5e28;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 58%;
+  }
+}
